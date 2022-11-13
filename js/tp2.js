@@ -325,7 +325,7 @@ const ejercicio11 = function(){
 
 /*12- Realiza un script que genere un número aleatorio entre 1 y 99.*/
 const ejercicio12 = function(){
-    const numero = Math.floor(Math.random()*99)+1;
+    const numero = Math.floor(Math.random()*99+1);
     alert('El número generado es '+ numero +'.');
 }
 
