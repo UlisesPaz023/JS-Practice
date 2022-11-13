@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Trabajo Práctico II</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/index.html"
+          ><img class="logo" src="../img/LOGO.png" alt="Logo"
+        /></a>
+        <h1>Prácticas JS</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="../pages/tp1.html">Práctico I</a>
+          </li>
+          <li>
+            <a class="tp" href="../pages/tp2.html">Práctico II</a>
+          </li>
+          <li>
+            <a href="#">Práctico III</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h2>Bucles</h2>
+      </div>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio I</h2>
+        <h3>
+          Escribir un programa que solicite la edad y si es mayor de 18 añosmostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje.
+        </h3>
+        <form action="">
+          <button onclick="ejercicio1()">Test</button>
+        </form>
+      </section>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio II</h2>
+        <h3>
+          Escribir un programa que solicite una nota (número) de 0 a 10. Luego mostrar la calificación en un alert según los siguientes rangos de nota: <br /> <br />
+          0-2: Muy deficiente <br />
+          3-4: Insuficiente <br />
+          5-6: Suficiente <br />
+          7: Bien <br />
+          8-9: Notable <br />
+          10: Sobresaliente <br />
+        </h3>
+        <form action="">
+          <button onclick="ejercicio2()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio III</h2>
+        <h3>
+          Realiza un script que pida cadenas de texto hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión.
+        </h3>
+        <form action="">
+          <button onclick="ejercicio3()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio IV</h2>
+        <h3>
+          Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
+        </h3>
+        <form action="">
+          <button onclick="ejercicio4()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio V</h2>
+        <h3>
+          Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma: <br/> <br/>
+          1 <br />
+          22 <br />
+          333 <br />
+          4444 <br />
+          55555 <br />
+          666666
+        </h3>
+        <form action="">
+          <button onclick="ejercicio5()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio VI</h2>
+        <h3>
+          Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el usuario (no mayor de 50) de la siguiente forma : (suponiendo que indica 30). <br/><br/>
+          303030303030303030303030303030303030303030303030303030303030 <br/>
+          2929292929292929292929292929292929292929292929292929292929 <br/>
+          28282828282828282828282828282828282828282828282828282828 <br/>
+          ….. <br/>
+          333 <br/>
+          22 <br/>
+          1
+        </h3>
+        <form action="">
+          <button onclick="ejercicio6()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio VII</h2>
+        <h3>
+          Crea script para generar pirámide siguiente con los números del 1 al número que indique el usuario (no mayor de 50).<br/><br/>
+          1 <br/>
+          12 <br/>
+          123 <br/>
+          1234 <br/>
+          12345 <br/>
+          123456 <br/>
+          ……
+        </h3>
+        <form action="">
+          <button onclick="ejercicio7()">Test</button>
+        </form>
+      </section>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio VIII</h2>
+        <h3>
+          Crea un script que escriba los números del 1 al 500, que indique
+          cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea
+          horizontal.
+        </h3>
+        <form action="">
+          <button onclick="ejercicio8()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio IX</h2>
+        <h3>
+          Realiza un script que pida número de filas y columnas y escriba una
+          tabla. Dentro de cada una de las celdas deberá escribirse un número
+          consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5
+          los números irán del 35 al 1.
+        </h3>
+        <form action="">
+          <button onclick="ejercicio9()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio X</h2>
+        <h3>
+          Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad). <br>
+          El algoritmo para calcular la letra del dni es el siguiente : <br> <br>
+          - El número debe ser entre 0 y 99999999. <br>
+          - Debemos calcular el resto de la división entera entre el número y el número 23. <br>
+          - Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E) <br>
+          - Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar. <br>
+          - Deberá de repetirse el proceso hasta que el usuario pulse «cancelar». <br>
+        </h3>
+        <form action="">
+          <button onclick="ejercicio10()">Test</button>
+        </form>
+      </section>
+      <div class="title">
+        <h2>Función Math()</h2>
+      </div>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio XI</h2>
+        <h3>
+          Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. <br> <br>
+          Nota: ver función: <a href="https://www.w3schools.com/js/js_math.asp">Math().</a>
+        </h3>
+        <form action="">
+          <button onclick="ejercicio11()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio XII</h2>
+        <h3>Realiza un script que genere un número aleatorio entre 1 y 99.</h3>
+        <form action="">
+          <button onclick="ejercicio12()">Test</button>
+        </form>
+      </section>
+      <div class="title">
+        <h2>Strings</h2>
+      </div>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio XIII</h2>
+        <h3>Realiza un script que pida un texto y lo muestre en mayúsculas.</h3>
+        <form action="">
+          <button onclick="ejercicio13()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio XIV</h2>
+        <h3>Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.</h3>
+        <form action="">
+          <button onclick="ejercicio14()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio XV</h2>
+        <h3>Realiza un script que cuente el número de vocales que tiene un texto.</h3>
+        <form action="">
+          <button onclick="ejercicio15()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio XVI</h2>
+        <h3>Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.</h3>
+        <form action="">
+          <button onclick="ejercicio16()">Test</button>
+        </form>
+      </section>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio XVII</h2>
+        <h3>Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.</h3>
+        <form action="">
+          <button onclick="ejercicio17()">Test</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h4>Ejercicios JS hechos por Ulises Paz.</h4>
+      <div class="rollingCode">
+        <a href="https://rollingcodeschool.com"><img src="../img/RSLogo.png" alt="Logo de RollingCode"/></a>
+        <p>Rolling Code School</p>
+      </div>
+    </footer>
+    <script src="../js/tp2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Trabajo Práctico I</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/index.html"><img class="logo" src="../img/LOGO.png" alt="Logo"/></a>
+        <h1>Prácticas JS</h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a class="tp" href="../pages/tp1.html">Práctico I</a>
+          </li>
+          <li>
+            <a href="../pages/tp2.html">Práctico II</a>
+          </li>
+          <li>
+            <a href="#">Práctico III</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h2>Variables</h2>
+      </div>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="dCircle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio I</h2>
+        <h3>
+          Escribe un programa de una sola línea que haga que aparezca en la
+          pantalla un alert que diga “un mensaje”.
+        </h3>
+        <form action="">
+          <!-- <input class="item" type="text" placeholder="Presiona el botón TEST para ejecutar." disabled> -->
+          <button onclick="ejercicio1()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <div>
+          <h2>Ejercicio II</h2>
+        </div>
+        <h3>
+          Escribe un programa de una sola línea que escriba en la pantalla un
+          texto que diga «Hello World» (document.write).
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio2()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio III</h2>
+        <h3>
+          Escribe un programa de una sola línea que escriba en la pantalla el resultado de sumar 3 + 5.
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio3()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio IV</h2>
+        <h3>
+          Escribe un programa de dos líneas que pida el nombre del usuario con un prompt y escriba un texto que diga «Hola nombreUsuario»
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio4()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio V</h2>
+        <h3>
+          Escribe un programa de tres líneas que pida un número, pida otro número y escriba el resultado de sumar estos dos números. <br/> <br/>
+          Nota: Tener en cuenta la siguiente función:
+          <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/parseInt">parseInt.</a>
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio5()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio VI</h2>
+        <h3>
+          Escribe un programa que pida dos números y escriba en la pantalla cual es el mayor.
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio6()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio VII</h2>
+        <h3>
+          Escribe un programa que pida 3 números y escriba en la pantalla el mayor de los tres.
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio7()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio VIII</h2>
+        <h3>
+          Escribe un programa que pida un número y diga si es divisible por 2.
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio8()">Test</button>
+        </form>
+      </section>
+      <div class="difficulty">
+        <h3>Dificultad</h3>
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <section class="exercise">
+        <h2>Ejercicio IX</h2>
+        <h3>
+          Escribe un programa que pida una frase y escriba las vocales que aparecen.<br/>
+          <br />
+          Nota: Tener en cuenta la función length y substring o charAt (developer mozilla).
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio9()">Test</button>
+        </form>
+      </section>
+      <section class="exercise">
+        <h2>Ejercicio X</h2>
+        <h3>
+          Escribe un programa que pida un número y nos diga: <br/>
+          - Si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro). <br/>
+          - Por cuál de los cuatro es divisible (hay que decir todos por los que es divisible).
+        </h3>
+        <form action="">
+          <button class="item" onclick="ejercicio10()">Test</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h4>Ejercicios JS hechos por Ulises Paz.</h4>
+      <div class="rollingCode">
+        <a href="https://rollingcodeschool.com"><img src="../img/RSLogo.png" alt="Logo de RollingCode"/></a>
+        <p>Rolling Code School</p>
+      </div>
+    </footer>
+    <script src="../js/tp1.js"></script>
+  </body>
+</html>
