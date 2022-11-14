@@ -1,7 +1,7 @@
 /*1- Escribir un programa que solicite la edad y si es mayor de 18 años mostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje.*/
 const ejercicio1 = function () {
     let edad = prompt('Ingrese la edad: ');
-    if (!isNaN(edad)) {
+    if (!isNaN(edad) && edad !== '') {
         if (edad > 18) {
             alert('Puede conducir.');
         }
@@ -10,7 +10,7 @@ const ejercicio1 = function () {
         }
     }
     else {
-        alert('No es un número');
+        alert('No es un número.');
     }
 }
 
@@ -25,8 +25,8 @@ Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje
 const ejercicio2 = function () {
     let nota = parseInt(prompt('Ingrese una nota: '));
 
-    if (isNaN(nota) && nota !== null) {
-        alert('Número invalido.');
+    if (isNaN(nota) && nota !== '') {
+        alert('Número inválido ó sin ingresar.');
     }
     else {
         switch (nota) {
