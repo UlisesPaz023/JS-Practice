@@ -1,26 +1,3 @@
-// const v1 = 10;
-// const v2 = 5;
-
-// // let v3;
-// // function producto(v1,v2){
-// //     return v1*v2;
-// // }
-// // v3 = producto(v1,v2);
-// // document.write(v3);
-
-// const v3 = (v1, v2) => {
-//     return v1 * v2;
-// }
-
-// const v4 = (v1, v2) => v1 * v2;
-
-// const age=prompt('Ingresa tu edad.');
-// const isOld = (age>=18)
-// ? () => alert('pasa ura')
-// : () => alert('no crack, aquí no pasás.');
-
-// isOld();
-
 /*1- Crear un array llamado meses y que almacene el nombre de los doce meses del año. Mostrar por pantalla en forma de lista  los doce nombres del arreglo.*/
 const ejercicio1 = function(){
     let meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
