@@ -130,10 +130,13 @@ const ejercicio5 = function () {
 const ejercicio6 = function () {
     let cantidad = parseInt(prompt('Ingrese número no mayor a 50.'));
     let numero = '';
-    if (cantidad > 50) {
-        alert('El número ingresado no es menor a cincuenta.');
+    if(cantidad > 50) {
+        alert('El número ingresado no debe ser mayor a cincuenta.');
+    } 
+    else if(isNaN(cantidad)){
+        alert('Ningún número ingresado.');
     }
-    else {
+    else{
         for (let i = cantidad; i > 0; i--) {
             for (let j = cantidad; j > cantidad - i; j--) {
                 document.write(i);
@@ -157,6 +160,9 @@ const ejercicio7 = function () {
 
     if (cantidad > 50) {
         alert('El número ingresado no es menor a cincuenta.');
+    }
+    else if(isNaN(cantidad)){
+        alert('Ningún número ingresado.');
     }
     else {
         for (let i = 0; i < cantidad; i++) {
@@ -194,12 +200,18 @@ const ejercicio9 = function () {
     let x = parseInt(prompt('Ingrese número de fila.'));
     let y = parseInt(prompt('Ingrese número de columna.'));
     let tabla = x * y;
-    for (let i = 0; i < x; i++) {
-        for (let j = 0; j < y; j++) {
-            document.write(tabla + ', ');
-            tabla--;
+
+    if(isNaN(x)||isNaN(y)){
+        alert('Debes ingresar números.');
+    }else
+    {
+        for (let i = 0; i < x; i++) {
+            for (let j = 0; j < y; j++) {
+                document.write(tabla + ', ');
+                tabla--;
+            }
+            document.write('</br>');
         }
-        document.write('</br>');
     }
 }
 
@@ -312,7 +324,7 @@ const ejercicio11 = function(){
     for(let i=0;i<3;i++){
         nombre[i] = prompt('Ingrese nombre '+(i+1)+'.');
         edad[i] = parseInt(prompt('Ingrese edad '+(i+1)+'.'));  
-        if(isNaN(edad[i]) || edad[i] === '' || nombre[i] === ''){
+        if(isNaN(edad[i]) || nombre[i] === ''){
             alert('Edad o nombre erróneos.');
             i--;
         }
@@ -325,13 +337,21 @@ const ejercicio11 = function(){
 /*12- Realiza un script que genere un número aleatorio entre 1 y 99.*/
 const ejercicio12 = function(){
     const numero = Math.floor(Math.random()*99+1);
-    alert('El número generado es '+ numero +'.');
+    if(isNaN(numero)){
+        alert('No ingresaste ningún número.');
+    } else {
+        alert('El número generado es '+ numero +'.');
+    }
 }
 
 /*13- Realiza un script que pida un texto y lo muestre en mayúsculas.*/
 const ejercicio13 = function(){
     let texto = prompt('Ingrese texto.').toUpperCase();
-    alert(texto);
+    if(texto === ''){
+        alert('Ningun texto ingresado.');
+    } else {
+        alert(texto);
+    }
 }
 
 /*14- Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.*/
@@ -353,23 +373,27 @@ const ejercicio14 = function(){
 const ejercicio15 = function(){
     let texto = prompt('Ingresar texto.');
     let vocal = 0;
-    for(let i=0; i<texto.length; i++){
-        switch(texto[i]){
-            case 'A':
-            case 'a':
-            case 'E':
-            case 'e':
-            case 'I':
-            case 'i':
-            case 'O':
-            case 'o':
-            case 'U':
-            case 'u':
-                vocal++;
-                break;
+    if(texto === ''){
+        alert('Ningún texto ingresado.');
+    } else{
+        for(let i=0; i<texto.length; i++){
+            switch(texto[i]){
+                case 'A':
+                case 'a':
+                case 'E':
+                case 'e':
+                case 'I':
+                case 'i':
+                case 'O':
+                case 'o':
+                case 'U':
+                case 'u':
+                    vocal++;
+                    break;
+            }
         }
+        alert(vocal+' vocal/es.');
     }
-    alert(vocal+' vocal/es.');
 }
 
 /*16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.*/
@@ -390,46 +414,5 @@ const ejercicio16 = function(){
 /*17- Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.*/
 const ejercicio17 = function(){
     let texto = prompt('Ingrese texto.');
-    let valor = 0;
-
-    if(texto !== ''){
-        for(let i=texto.length-1; i>=0; i--){
-            switch(texto[i]){
-                case 'A':
-                case 'a':
-                case 'E':
-                case 'e':
-                case 'I':
-                case 'i':
-                case 'O':
-                case 'o':
-                case 'U':
-                case 'u':
-                    valor = i;
-                    break;
-            }
-        }
-        alert('La posición de la primera vocal es '+ valor +'.');
-    } else{
-        alert('No ingresaste ningún texto.');
-    }
-
-    //otro método.
-    // for(let i=0; i<texto.length; i++){
-    //     switch(texto[i]){
-    //         case 'A':
-    //         case 'a':
-    //         case 'E':
-    //         case 'e':
-    //         case 'I':
-    //         case 'i':
-    //         case 'O':
-    //         case 'o':
-    //         case 'U':
-    //         case 'u':
-    //             valor = i;
-    //             i = texto.length;
-    //             break;
-    //     }
-    // }
+    texto !== '' ? alert('La vocal que se encuentra en la primera posición es '+ texto[0] +'.') : alert('No ingresaste ningún texto.');
 }

@@ -13,24 +13,22 @@ Escribe por pantalla el elemento que ocupa la segunda posición.
 Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
 */
 const ejercicio2 = function(){
-    let ciudades = []
+    let ciudades = [];
     let confirmar;
     let ciudad;
-    let i = 0;
     do{
         ciudad = prompt('Ingrese ciudad');
         if(ciudad !== null){
-            ciudades.splice(i,0,ciudad);
+            ciudades.push(ciudad);
         } else {
             ciudad = prompt('Ningún texto ingresado.'); 
         }
         confirmar = confirm('¿Deseas ingresar otra ciudad?.');
-        i++;
     }while(confirmar);
     alert('Arreglo generado: '+ciudades+'\n\nLongitud: '+ciudades.length);
     document.write('Primera posición: '+ciudades[0] +'<br>Tercera posición: '+ ciudades[2] +'<br>Última posición: '+ ciudades[ciudades.length-1]);
     confirmar = confirm('Se añadirá la ciudad de París en la última posición.');
-    ciudades.splice(ciudades.length-1,0,"París");
+    ciudades.push("París"); // Se añade París en la última posición.
     document.write('<br>Segunda posición: '+ciudades[1]);
     ciudades.splice(1,1,"Barcelona");
     document.write('<br>Primera posición: '+ciudades[0] +'<br>Segunda posición: '+ ciudades[1] +'<br>Última posición: '+ ciudades[ciudades.length-1]);
